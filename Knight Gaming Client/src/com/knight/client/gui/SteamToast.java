@@ -1,3 +1,4 @@
+package com.knight.client.gui;
 import java.awt.Color;
 import java.awt.Frame;
 import java.awt.Label;
@@ -6,6 +7,8 @@ import java.awt.event.MouseListener;
 import java.util.concurrent.Callable;
 
 import javax.swing.JFrame;
+
+import com.knight.client.KGMain;
 
 
 

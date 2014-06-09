@@ -1,3 +1,4 @@
+package com.knight.client.gui;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.TextArea;
@@ -6,6 +7,8 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+
+import com.knight.client.KGMain;
 
 
 

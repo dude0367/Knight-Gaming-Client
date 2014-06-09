@@ -1,3 +1,4 @@
+package com.knight.client;
 import javax.swing.JOptionPane;
 
 public class Input
