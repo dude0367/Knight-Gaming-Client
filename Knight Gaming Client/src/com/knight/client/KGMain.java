@@ -84,7 +84,6 @@ public class KGMain extends JFrame implements Runnable, ActionListener {
 			streamOut = new PrintStream(clientSocket.getOutputStream(), true);
 
 
-
 			while(Running) {
 				String line = streamIn.readLine();
 				System.out.println(line);
@@ -134,8 +133,6 @@ public class KGMain extends JFrame implements Runnable, ActionListener {
 							}
 						}
 					}
-
-
 				}
 			}
 		}
