@@ -31,7 +31,7 @@ public class ChatWindowOld extends JFrame implements ActionListener {
 	}
 	
 	public void populate(String title) {
-		this.setTitle(title);
+		this.setTitle(title);//dead
 		this.setSize(300, 400);
 		this.setVisible(true);
 		input = new TextArea();
