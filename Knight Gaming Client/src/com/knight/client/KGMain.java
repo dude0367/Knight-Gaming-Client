@@ -20,6 +20,7 @@ import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 
 import com.knight.client.gui.ChatWindow;
+import com.knight.client.gui.ChatWindowOld;
 import com.knight.client.gui.SteamToast;
 
 
