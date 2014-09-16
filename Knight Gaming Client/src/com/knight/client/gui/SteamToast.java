@@ -34,6 +34,7 @@ public class SteamToast extends JFrame implements Runnable, MouseListener {
 	
 	public SteamToast(String text, Callable func, String name) {
 		initi(text, func);
+		this.name = name;
 	}
 	
 	private void initi(String text, Callable func) {
@@ -113,8 +114,10 @@ public class SteamToast extends JFrame implements Runnable, MouseListener {
 		}
 		if(name != null) {
 			//KGMain.chats.get(name) = new ChatWindow(name);
-			KGMain.chats.put(name, new ChatWindow("Chat with " + name, name));
-			KGMain.chats.get(name).addMessage(this.getTitle());
+			ChatWindow window = new ChatWindow("Chat with " + name, name);
+			KGMain.chats.put(name, window);
+			window.addMessage(this.getTitle());
+			window.setVisible(true);
 		}
 	}
 
