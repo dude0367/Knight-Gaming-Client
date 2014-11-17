@@ -19,6 +19,10 @@ import java.awt.BorderLayout;
 
 public class ChatWindow extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private final JTextArea chatArea = new JTextArea();
 	private final JPanel inputPanel = new JPanel();

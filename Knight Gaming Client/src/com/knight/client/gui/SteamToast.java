@@ -15,6 +15,10 @@ import com.knight.client.KGMain;
 
 public class SteamToast extends JFrame implements Runnable, MouseListener {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public Frame frm;
 	Thread thread;
 	public int width = 200;
@@ -25,19 +29,19 @@ public class SteamToast extends JFrame implements Runnable, MouseListener {
 	SteamToast toast;
 	public boolean showing = true;
 	public Label label;
-	Callable clickFunc;
+	Callable<?> clickFunc;
 	String name;
 	
-	public SteamToast(String text, Callable func) {
+	public SteamToast(String text, Callable<?> func) {
 		initi(text, func);		
 	}
 	
-	public SteamToast(String text, Callable func, String name) {
+	public SteamToast(String text, Callable<?> func, String name) {
 		initi(text, func);
 		this.name = name;
 	}
 	
-	private void initi(String text, Callable func) {
+	private void initi(String text, Callable<?> func) {
 		frm = this;
 		((JFrame) frm).setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    frm.setExtendedState(JFrame.MAXIMIZED_BOTH);

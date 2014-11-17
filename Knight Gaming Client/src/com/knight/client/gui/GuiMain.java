@@ -1,13 +1,10 @@
 package com.knight.client.gui;
 
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 
 import java.awt.BorderLayout;
 
 import javax.swing.JButton;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import com.knight.client.KGMain;

@@ -17,8 +17,6 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.text.Position;
-
 import com.knight.client.gui.ChatWindow;
 import com.knight.client.gui.GuiFriends;
 import com.knight.client.gui.GuiMain;
@@ -30,6 +28,10 @@ import com.knight.client.gui.SteamToast;
 
 public class KGMain extends JFrame implements Runnable, ActionListener {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private static BufferedReader streamIn;
 	public static PrintStream streamOut;
 	public static boolean Running = true;
@@ -143,7 +145,7 @@ public class KGMain extends JFrame implements Runnable, ActionListener {
 								chats.get(data[1]).setVisible(true);
 							}
 						}else {
-							SteamToast toast = new SteamToast(data[1] + ": " + data[2], new Callable() {
+							SteamToast toast = new SteamToast(data[1] + ": " + data[2], new Callable<Object>() {
 								public Object call() throws Exception {
 									//KGMain.chats.get(data[1])data = new ChatWindow("Chat with " + data[1], data[1]);
 									//ChatWindow window = new ChatWindow(data[1], data[1]);

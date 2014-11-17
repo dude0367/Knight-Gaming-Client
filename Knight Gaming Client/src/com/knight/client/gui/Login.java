@@ -17,6 +17,10 @@ import com.knight.client.KGMain;
 
 public class Login extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private final JPanel inputPanel = new JPanel();
 	private final JPanel usernamePanel = new JPanel();

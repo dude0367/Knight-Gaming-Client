@@ -5,10 +5,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Hashtable;
-
 import javax.swing.DefaultListModel;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -23,11 +19,15 @@ import com.knight.client.KGMain;
 
 public class GuiFriends extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private final JScrollPane scrollPane = new JScrollPane();
 	private final JButton btnAddFriend = new JButton("Add Friend");
 	public DefaultListModel<String> listModel = new DefaultListModel<String>();
-	public final JList listFriends = new JList(listModel);
+	public final JList<String> listFriends = new JList<String>(listModel);
 	//public ArrayList<ChatWindow> chats = new ArrayList<ChatWindow>();
 
 	/**
@@ -65,7 +65,7 @@ public class GuiFriends extends JFrame {
 		listFriends.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		listFriends.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent evt) {
-				JList list = (JList)evt.getSource();
+				JList<?> list = (JList<?>)evt.getSource();
 				if (evt.getClickCount() == 2) {
 					//int index = list.locationToIndex(evt.getPoint());//TODO: HANDLE DOUBLE CLICK HERE
 					String name = getSelectedName();

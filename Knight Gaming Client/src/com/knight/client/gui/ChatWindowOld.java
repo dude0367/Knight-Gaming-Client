@@ -15,6 +15,10 @@ import com.knight.client.KGMain;
 
 public class ChatWindowOld extends JFrame implements ActionListener {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public TextArea chatArea;
 	public TextArea input;
 	public JButton send;
